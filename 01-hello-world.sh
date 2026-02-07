@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "helo world"
+echo "hello world"
+echo "i am prathyusha chollangi"
