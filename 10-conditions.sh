@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUM=$779
+NUM=779
 if [ $NUM -gt 20 ];then
     echo "given number is greater than: $NUM"
 elif [ $NUM -lt 20 ];then
