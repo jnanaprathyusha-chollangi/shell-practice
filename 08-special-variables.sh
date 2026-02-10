@@ -11,3 +11,4 @@ echo "PID of the script: $$"
 sleep 100 &
 echo "Backgroup process id: $!"
 echo "All args/variables passed to script : $*"
+echo "Exit status of previous command: $?"
