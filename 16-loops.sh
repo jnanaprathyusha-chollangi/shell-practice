@@ -22,7 +22,7 @@ for package in $@ #sudo sh 15-loop.sh nginx mysql nodejs
 do 
     dnf list installed $package &>>$LOG_FILE
     if [ $? -ne 0 ]; then
-        echo "$packed not installed, installing now"
+        echo "$package not installed, installing now"
         dnf install $package -y &>>$LOG_FILE
         VALIDATE $? "$package Installing"
     else
