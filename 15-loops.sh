@@ -1,10 +1,15 @@
 #!/bin/bash
 
 USER_ID=$(id -u)
+LOG_FLODER="/var/log/shell-script"
+LOG_FILE="/var/log/shell-script/$0.log"
+
 if [ $USER_ID -ne 0 ] ; then
     echo "please run this script with root user access" &>>$LOG_FILE
     exit 1 
 fi 
+mkdir -p $LOG_FLODER
+
 VALIDATE(){
     if [ $1 -ne 0 ]; then 
         echo "$2...FALIURE" &>>$LOG_FILE
