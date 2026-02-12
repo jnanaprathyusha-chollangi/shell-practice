@@ -10,7 +10,7 @@ VALIDATE(){
         echo "$2...FALIURE" &>>$LOG_FILE
         exit 1 
     else 
-        echo "$2...SUCCESS" &>>LOG_FILE
+        echo "$2...SUCCESS" &>>$LOG_FILE
     fi
 }
 for i in $@ #sudo sh 15-loop.sh nginx mysql nodejs
