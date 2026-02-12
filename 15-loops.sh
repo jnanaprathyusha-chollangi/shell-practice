@@ -13,7 +13,7 @@ VALIDATE(){
         echo "$2...SUCCESS" &>>$LOG_FILE
     fi
 }
-for i in $@ #sudo sh 15-loop.sh nginx mysql nodejs
+for package in $@ #sudo sh 15-loop.sh nginx mysql nodejs
 do 
     dnf install $package -y &>>$LOG_FILE
     VALIDATE $? "$package Installing"
