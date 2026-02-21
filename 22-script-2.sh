@@ -1,5 +1,5 @@
 #!/bin/bash
-COUNTRY=UEA
+#COUNTRY=UEA
 
 echo "I am in: $COUNTRY"
 echo "PID of script-2: $$"
