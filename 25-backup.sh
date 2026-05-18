@@ -29,7 +29,7 @@ if [ $# -lt 2 ]; then
 fi
 
 if [ -d $SOURCE_DIR ]; then 
-    echo -e "$R $source_DIR does not exit $N"
+    echo -e "$R $SOURCE_DIR does not exit $N"
     exit 1
 fi 
 
