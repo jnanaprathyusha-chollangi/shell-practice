@@ -55,7 +55,7 @@ log "Destination Directory: $DEST_DIR"
 log "Days: $DAYS"
  
 
- if [ -Z $FILES ]; then 
+ if [ -Z "${FILES}" ]; then 
     log "No file is archieve...$Y Skipping $N"
 else 
     #app-logs-$timestamp.Zip
