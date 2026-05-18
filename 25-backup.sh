@@ -55,12 +55,12 @@ log "Destination Directory: $DEST_DIR"
 log "Days: $DAYS"
  
 
- if [ -Z "${FILES}" ]; then 
+ if [ -z "${FILES}" ]; then 
     log "No file is archieve...$Y Skipping $N"
 else 
     #app-logs-$timestamp.Zip
     log "Files found to archieve: $FILES"
     TIMESTAMP=$(date +%F-%H-%M-%S)
-    ZIP-FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.tar.gz"
+    ZIP_FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.tar.gz"
     echo "Archieve name: $ZIP_FILE_NAME"
 fi
