@@ -5,7 +5,7 @@ LOGS_DIR="/var/log/shell-script"
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-N="\e[34m"
+N="\e[0m"
 
 mkdir -p $LOGS_DIR
 
