@@ -35,7 +35,7 @@ if [ $# -lt 2 ]; then
     USAGE
 fi
 
-if [ -d $SOURCE_DIR ]; then 
+if [ ! -d $SOURCE_DIR ]; then 
     echo -e "$R $SOURCE_DIR does not exit $N"
     exit 1
 fi 
