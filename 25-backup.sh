@@ -29,11 +29,12 @@ if [ $# -lt 2 ]; then
 fi
 
 if [ -d $SOURCE_DIR ]; then 
-    echo "$R source_DIR does not exit $N"
+    echo "$R $source_DIR does not exit $N"
     exit 1
 fi 
 
 if [ -d $DEST_DIR ]; then 
-    echo "$R DEST_DIR does not exit $N"
+    echo "$R $DEST_DIR does not exit $N"
     exit 1 
 fi 
+ 
