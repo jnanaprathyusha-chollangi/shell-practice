@@ -70,7 +70,7 @@ else
         log "Archeival is ....$G SUCCESS $N"
 
         #Delete the files...
-        while IFS=read -r filepath; do 
+        while IFS= read -r filepath; do 
         # process each line here
         log "Deleting file: $filepath"
         rm -f $filepath
