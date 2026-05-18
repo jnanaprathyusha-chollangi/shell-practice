@@ -3,8 +3,8 @@
 USERID=$(id -u)
 LOGS_DIR="/var/log/shell-script"
 LOGS_FILE="$LOGS_DIR/backup.log"
-SOURCE_DIR=
-DEST_DIR=
+SOURCE_DIR=$1
+DEST_DIR=$2
 DAYS=${3:-14} # 14 days is the default value, if the user not give 
 
 R="\e[31m"
